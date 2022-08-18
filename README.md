@@ -13,3 +13,13 @@ Benodigheden
 ## Aansluiten rpi op de kwh meter
 1. verbind een 3.3v pin met de + van de meter.
 2. verbind op gpio22 pin met de  - van de meter.
+
+### Code
+Als je meer dan 3500 watt opwekt of gebruikt verander dan dit stukje code.
+```
+    if vtijd > 1 and vtijd < 250:
+```
+in 
+```
+    if vtijd > 0 and vtijd < 250:
+```
